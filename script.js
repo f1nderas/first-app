@@ -35,6 +35,11 @@ function submitForm() {
 
   displayData(data);
   closePopup();
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("phone").value = "";
+  document.getElementById("age").value = "";
+  document.getElementById("address").value = "";
 }
 
 function displayData(data) {
