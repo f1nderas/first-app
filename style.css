@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#startButton {
+  position: absolute;
+  left: calc(50% - 75px);
+  top: calc(50% - 25px);
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+}
+
+#popupBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 500px;
+  max-width: 90%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  display: none;
+}
+
+h2 {
+  text-align: center;
+}
+
+.inputFields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.inputFields div {
+  flex-basis: calc(50% - 10px);
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#submitButton {
+  display: block;
+  margin: 0 auto;
+}
+
+#dataContainer {
+  margin-top: 20px;
+}
+
+.dataItem {
+  margin-bottom: 10px;
+}
